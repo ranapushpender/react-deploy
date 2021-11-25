@@ -1,0 +1,11 @@
+version: '2'
+services:
+   nginx:
+    container_name: nginx
+    image: nginx:latest
+    volumes:
+      - ./projects:/projects
+      - "./configs:/etc/nginx/conf.d"
+      - "./scripts:/scripts"
+    ports:
+      - 3002:80

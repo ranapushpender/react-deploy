@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="31px" height="31px" viewBox="0 0 31 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>cancel-circle</title>
+    <g id="Activities" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="5m." transform="translate(-860.000000, -238.000000)">
+            <g id="Group-6" transform="translate(355.000000, 202.000000)">
+                <g id="cancel-circle" transform="translate(505.000000, 36.000000)">
+                    <path d="M15.4004197,30.7999995 C6.89541988,30.7999995 0.000419999992,23.9049996 0.000419999992,15.3999997 C0.000419999992,6.89499988 6.89541988,0 15.4004197,0 C23.9054196,0 30.8004195,6.89499988 30.8004195,15.3999997 C30.8004195,23.9049996 23.9054196,30.7999995 15.4004197,30.7999995 Z" id="Stroke" fill="#FFFFFF"></path>
+                    <line x1="19.3597597" y1="11.4399598" x2="11.4413598" y2="19.3597597" id="Stroke" stroke="#0077EA" stroke-linecap="round" stroke-linejoin="round"></line>
+                    <line x1="11.4410798" y1="11.4399598" x2="19.3594797" y2="19.3597597" id="Stroke" stroke="#0077EA" stroke-linecap="round" stroke-linejoin="round"></line>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

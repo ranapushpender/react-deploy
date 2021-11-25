@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="76px" height="76px" viewBox="0 0 76 76" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 2</title>
+    <defs>
+        <circle id="path-1" cx="38" cy="38" r="38"></circle>
+        <filter x="-27.0%" y="-23.7%" width="154.0%" height="147.4%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0552995588 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Transport-Pop-Up-view" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="38.-Transport-Service" transform="translate(-602.000000, -363.000000)">
+            <g id="Group-2" transform="translate(602.000000, 363.000000)">
+                <g id="Group-9">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill-opacity="0.0842942458" fill="#3362FA" xlink:href="#path-1"></use>
+                    <g id="Group-13" filter="url(#filter-3)" mask="url(#mask-2)">
+                        <g transform="translate(13.000000, 25.000000)">
+                            <rect id="Rectangle-Copy-5" fill="#FFFFFF" x="0" y="0" width="50" height="57" rx="2"></rect>
+                            <rect id="Rectangle" fill="#333333" opacity="0.300000012" x="4" y="4" width="6" height="2" rx="1"></rect>
+                            <rect id="Rectangle-Copy-7" fill="#333333" opacity="0.300000012" x="4" y="16" width="6" height="2" rx="1"></rect>
+                            <rect id="Rectangle-Copy-6" fill="#333333" opacity="0.09752982" x="4" y="8" width="37" height="2" rx="1"></rect>
+                            <rect id="Rectangle-Copy-8" fill="#333333" opacity="0.09752982" x="4" y="20" width="37" height="2" rx="1"></rect>
+                            <rect id="Rectangle-Copy-10" fill="#333333" opacity="0.300000012" x="4" y="28" width="6" height="2" rx="1"></rect>
+                            <rect id="Rectangle-Copy-9" fill="#333333" opacity="0.09752982" x="4" y="32" width="37" height="2" rx="1"></rect>
+                            <rect id="Rectangle-Copy-12" fill="#333333" opacity="0.300000012" x="4" y="40" width="6" height="2" rx="1"></rect>
+                            <rect id="Rectangle-Copy-11" fill="#333333" opacity="0.09752982" x="4" y="44" width="37" height="2" rx="1"></rect>
+                        </g>
+                    </g>
+                </g>
+                <g id="Group-14" transform="translate(13.000000, 3.000000)">
+                    <rect id="Rectangle" fill="#3362FA" x="0" y="0" width="50" height="19" rx="2"></rect>
+                    <rect id="Rectangle-Copy-13" fill="#FFFFFF" x="4" y="6" width="6" height="2" rx="1"></rect>
+                    <rect id="Rectangle-Copy-14" fill="#FFFFFF" x="4" y="10" width="37" height="2" rx="1"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

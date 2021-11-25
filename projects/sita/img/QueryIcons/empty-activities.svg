@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="56px" height="56px" viewBox="0 0 56 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>903D7B07-5E51-44F3-A573-4A869FEC8F8C</title>
+    <defs>
+        <circle id="path-1" cx="28" cy="28" r="28"></circle>
+        <filter x="-36.6%" y="-32.1%" width="173.3%" height="164.3%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0552995588 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="18" transform="translate(-1113.000000, -198.000000)">
+            <g id="Group-16" transform="translate(1003.000000, 107.000000)">
+                <g id="Group-12" transform="translate(110.000000, 91.000000)">
+                    <g id="Group-9">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Mask" fill-opacity="0.0842942458" fill="#3362FA" xlink:href="#path-1"></use>
+                        <g id="Group-13" filter="url(#filter-3)" mask="url(#mask-2)">
+                            <g transform="translate(9.578947, 18.421053)">
+                                <rect id="Rectangle-Copy-5" fill="#FFFFFF" x="0" y="0" width="36.8421053" height="42" rx="2"></rect>
+                                <rect id="Rectangle" fill="#333333" opacity="0.300000012" x="2.94736842" y="2.94736842" width="4.42105263" height="1.47368421" rx="0.736842105"></rect>
+                                <rect id="Rectangle-Copy-7" fill="#333333" opacity="0.300000012" x="2.94736842" y="11.7894737" width="4.42105263" height="1.47368421" rx="0.736842105"></rect>
+                                <rect id="Rectangle-Copy-6" fill="#333333" opacity="0.09752982" x="2.94736842" y="5.89473684" width="27.2631579" height="1.47368421" rx="0.736842105"></rect>
+                                <rect id="Rectangle-Copy-8" fill="#333333" opacity="0.09752982" x="2.94736842" y="14.7368421" width="27.2631579" height="1.47368421" rx="0.736842105"></rect>
+                                <rect id="Rectangle-Copy-10" fill="#333333" opacity="0.300000012" x="2.94736842" y="20.6315789" width="4.42105263" height="1.47368421" rx="0.736842105"></rect>
+                                <rect id="Rectangle-Copy-9" fill="#333333" opacity="0.09752982" x="2.94736842" y="23.5789474" width="27.2631579" height="1.47368421" rx="0.736842105"></rect>
+                                <rect id="Rectangle-Copy-12" fill="#333333" opacity="0.300000012" x="2.94736842" y="29.4736842" width="4.42105263" height="1.47368421" rx="0.736842105"></rect>
+                                <rect id="Rectangle-Copy-11" fill="#333333" opacity="0.09752982" x="2.94736842" y="32.4210526" width="27.2631579" height="1.47368421" rx="0.736842105"></rect>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Group-14" transform="translate(9.578947, 2.210526)">
+                        <rect id="Rectangle" fill="#3362FA" x="0" y="0" width="36.8421053" height="14" rx="2"></rect>
+                        <rect id="Rectangle-Copy-13" fill="#FFFFFF" x="2.94736842" y="4.42105263" width="4.42105263" height="1.47368421" rx="0.736842105"></rect>
+                        <rect id="Rectangle-Copy-14" fill="#FFFFFF" x="2.94736842" y="7.36842105" width="27.2631579" height="1.47368421" rx="0.736842105"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
