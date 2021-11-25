@@ -1,4 +1,4 @@
-ls ../projects | while read line ; do sed 's/\$\$\$\$\$/'$line'/g' template.conf > ../configs/$line.conf ; done
-#sed 's/\$\$\$\$\$/'$1'/g' template.conf
+ls /projects | while read line ; do sed 's/\$\$\$\$\$/'$line'/g' /scripts/template.conf > /etc/nginx/conf.d/$line.conf ; done
+nginx -s reload
 
 
