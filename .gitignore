@@ -1,1 +1,4 @@
 atko-mvp-frontend
+projects/*
+!configs/default.conf
+configs/*
