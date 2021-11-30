@@ -1,22 +1,27 @@
 before_script:
   - apk add git
+  - apk add openssh
   - apk add openssh-client
-  # - apt-get install nodejs npm
-  # - 'which ssh-agent || ( apt-get install -qq openssh-client )'
-  # - eval $(ssh-agent -s)
-  # - ssh-add <(echo "$SSH_PRIVATE_KEY")
-  # - mkdir -p ~/.ssh
-  # - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
-    
+  - apk add curl
 deploy_staging:
   image: node:12-alpine
   type: deploy
-  # environment:
-  #   name: staging
-  #   url: example.com
   script:
+    - branchname=`echo "${CI_COMMIT_BRANCH}" | sed 's/feature\///g'`
+    - curl -o .env.development ${DEVENV}
+    - cat .env.development
+    - mkdir build
     - npm install
     - npm run build:dev
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    - eval $(ssh-agent -s)
+    - echo "$KEY" | tr -d '\r' | ssh-add -
+    - mv build $branchname
+    - ssh -o StrictHostKeyChecking=no $USERNAME@$SERVER rm -rf /$USERNAME/react-deploy/projects/$branchname
+    - scp -o StrictHostKeyChecking=no -r ./$branchname $USERNAME@$SERVER:/$USERNAME/react-deploy/projects/
+    - ssh -o StrictHostKeyChecking=no $USERNAME@$SERVER 'docker exec -i nginx sh /scripts/generate-config.sh'
+
     # - ssh root@example.com "cd var/www/ && git checkout master && git pull origin master && exit"
   only:
     - /^feature/.*$/
