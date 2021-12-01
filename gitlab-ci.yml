@@ -9,9 +9,12 @@ deploy_staging:
   script:
     - branchname=`echo "${CI_COMMIT_BRANCH}" | sed 's/feature\///g'`
     - curl -o .env.development ${DEVENV}
-    - cat .env.development
     - mkdir build
+    - npm cache clean --force
+    -  rm -rf node_modules
+    - export NODE_OPTIONS=--max_old_space_size=8096
     - npm install
+    - echo "*" > .eslintignore
     - npm run build:dev
     - mkdir -p ~/.ssh
     - chmod 700 ~/.ssh
@@ -21,7 +24,5 @@ deploy_staging:
     - ssh -o StrictHostKeyChecking=no $USERNAME@$SERVER rm -rf /$USERNAME/react-deploy/projects/$branchname
     - scp -o StrictHostKeyChecking=no -r ./$branchname $USERNAME@$SERVER:/$USERNAME/react-deploy/projects/
     - ssh -o StrictHostKeyChecking=no $USERNAME@$SERVER 'docker exec -i nginx sh /scripts/generate-config.sh'
-
-    # - ssh root@example.com "cd var/www/ && git checkout master && git pull origin master && exit"
   only:
     - /^feature/.*$/
