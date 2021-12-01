@@ -11,7 +11,7 @@ deploy_staging:
     - curl -o .env.development ${DEVENV}
     - mkdir build
     - npm cache clean --force
-    -  rm -rf node_modules
+    - rm -rf node_modules
     - export NODE_OPTIONS=--max_old_space_size=8096
     - npm install
     - echo "*" > .eslintignore
