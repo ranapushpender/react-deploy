@@ -21,7 +21,7 @@ deploy_staging:
     - eval $(ssh-agent -s)
     - echo "$KEY" | tr -d '\r' | ssh-add -
     - mv build $branchname
-    - ssh -o StrictHostKeyChecking=no $USERNAME@$SERVER rm -rf /$USERNAME/react-deploy/projects/$branchname
+    - ssh -o StrictHostKeyChecking=no $USERNAME@$SERVER rm -rf /$DEPLOY_PATH/react-deploy/projects/$branchname
     - scp -o StrictHostKeyChecking=no -r ./$branchname $USERNAME@$SERVER:/$DEPLOY_PATH/react-deploy/projects/
     - ssh -o StrictHostKeyChecking=no $USERNAME@$SERVER 'docker exec -i nginx sh /scripts/generate-config.sh'
   only:
