@@ -25,4 +25,4 @@ deploy_staging:
     - scp -o StrictHostKeyChecking=no -r ./$branchname $USERNAME@$SERVER:/$DEPLOY_PATH/react-deploy/projects/
     - ssh -o StrictHostKeyChecking=no $USERNAME@$SERVER 'docker exec -i nginx sh /scripts/generate-config.sh'
   only:
-    - /^feature/.*$/
+    - /^autobuild/.*$/
