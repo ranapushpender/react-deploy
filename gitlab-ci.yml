@@ -7,7 +7,7 @@ deploy_staging:
   image: node:12-alpine
   type: deploy
   script:
-    - branchname=`echo "${CI_COMMIT_BRANCH}" | sed 's/feature\///g'`
+    - branchname=`echo "${CI_COMMIT_BRANCH}" | sed 's/autobuild\///g'`
     - curl -o .env.development ${DEVENV}
     - mkdir build
     - npm cache clean --force
