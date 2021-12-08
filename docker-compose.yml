@@ -1,5 +1,23 @@
 version: '2'
 services:
+   openssh-server:
+    image: lscr.io/linuxserver/openssh-server
+    container_name: openssh-server
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Asia/Kolkata
+      - PUBLIC_KEY_DIR=/keys #optional
+      - SUDO_ACCESS=false #optional
+      - PASSWORD_ACCESS=false #optional
+      - USER_NAME=ubuntu
+    volumes:
+      - ./openssh:/config
+      - ./keys:/keys
+      - .:/home/ubuntu/react-deploy
+    ports:
+      - 2222:2222
+    restart: unless-stopped
    nginx:
     container_name: nginx
     build: ./nginx
