@@ -14,7 +14,7 @@ services:
     volumes:
       - ./openssh:/config
       - ./keys:/keys
-      - .:/home/ubuntu/react-deploy
+      - ./projects:/home/ubuntu/react-deploy/projects
     ports:
       - 2222:2222
     restart: unless-stopped
