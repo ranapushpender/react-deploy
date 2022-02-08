@@ -1,0 +1,19 @@
+server {
+        listen 80;
+        listen [::]:80;
+        index index.html index.htm index.nginx-debian.html;
+
+        server_name dev-api.sita.grappus.com;
+
+        location / {
+                proxy_pass https://pbxvz323g8.execute-api.ap-south-1.amazonaws.com;
+                proxy_hide_header Access-Control-Allow-Origin;
+                proxy_hide_header access-control-allow-headers;
+                proxy_hide_header access-control-allow-methods;
+                proxy_set_header Origin http://sita.grappus.com;
+                add_header 'Access-Control-Allow-Origin' $http_origin always;
+                add_header 'Access-Control-Allow-Methods' 'GET, POST, PUT, DELETE, OPTIONS' always;
+                add_header 'Access-Control-Max-Age' 1728000;
+                add_header 'Access-Control-Allow-Headers' *;
+        }
+}

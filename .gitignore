@@ -4,3 +4,4 @@ projects/*
 configs/*
 keys/*
 openssh/*
+nginx/manual-configs/*.conf
