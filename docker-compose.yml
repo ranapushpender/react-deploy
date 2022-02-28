@@ -27,6 +27,7 @@ services:
       - "./scripts:/scripts"
       - './html:/usr/share/nginx/html'
       - "./nginx/manual-configs/dev-api.conf:/etc/nginx/conf.d/dev-api.conf"
+      - "./nginx/manual-configs/dev-api-test.conf:/etc/nginx/conf.d/dev-api-test.conf"
       - /etc/letsencrypt/live/dev-api.sita.grappus.com/privkey.pem:/certs/privkey.pem
       - /etc/letsencrypt/live/dev-api.sita.grappus.com/fullchain.pem:/certs/fullchain.pem
     ports:
