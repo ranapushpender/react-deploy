@@ -1,6 +1,7 @@
 upstream <name for upstream> {
     server <domain name for https backend>:443;
-    keepalive 5; # too keepalive some connections 
+    keepalive 32; # too keepalive some connections 
+    keepalive_timeput 10; 
 }
 server {
         listen 80;
